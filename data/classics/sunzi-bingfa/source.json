@@ -1,0 +1,35 @@
+{
+  "title": "孫子兵法",
+  "slug": "sunzi-bingfa",
+  "status": "complete_as_source_edition",
+  "language": "zh",
+  "acquired_at": "2026-09-23",
+  "source": {
+    "repository": "https://github.com/GITenberg/----_23864",
+    "exact_url": "https://raw.githubusercontent.com/GITenberg/----_23864/6cb35bc446fde5d11ba5abcd60721635a706ae97/23864-0.txt",
+    "commit": "6cb35bc446fde5d11ba5abcd60721635a706ae97",
+    "source_file": "23864-0.txt",
+    "source_sha256": "2565c1822a8b0ab695ca15f39e3e17328176e279458c72f04af70c11b5265074",
+    "original_format": "UTF-8 plain text (Project Gutenberg ebook 23864)"
+  },
+  "license": {
+    "designation": "Public domain in the United States; Project Gutenberg License/trademark terms apply to the source ebook",
+    "evidence": [
+      "https://github.com/GITenberg/----_23864/blob/6cb35bc446fde5d11ba5abcd60721635a706ae97/README.rst",
+      "https://github.com/GITenberg/----_23864/blob/6cb35bc446fde5d11ba5abcd60721635a706ae97/LICENSE"
+    ],
+    "uncertainty": "Project Gutenberg states public-domain status for the United States and warns that copyright law varies by country. Gutenberg headers, footer, license text, and trademark references were removed from text.md; source provenance remains here."
+  },
+  "completeness": {
+    "expected_chapters": 13,
+    "actual_chapters": 13,
+    "verification": "Matched the conventional thirteen named chapter headings, from 始計第一 through 用間第十三, in source order."
+  },
+  "conversion": "Removed Project Gutenberg header/footer; normalized LF and trailing whitespace; promoted the 13 verified chapter headings to Markdown H2; added an H1. No translation or modernization.",
+  "files": {
+    "text.md": {
+      "sha256": "8f90feda01f15072a1e012d8f43579bcfd8d67945585e85ac1e85984c2e099f0",
+      "bytes": 22470
+    }
+  }
+}

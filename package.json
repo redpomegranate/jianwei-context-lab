@@ -10,7 +10,11 @@
   },
   "private": true,
   "dependencies": {
-    "@replit/connectors-sdk": "^0.4.3"
+    "@replit/connectors-sdk": "^0.4.3",
+    "@workspace/integrations-openai-ai-server": "workspace:*",
+    "openai": "^6.49.0",
+    "tsx": "catalog:",
+    "zod": "3.25.76"
   },
   "devDependencies": {
     "prettier": "^3.9.6",

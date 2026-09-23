@@ -1,0 +1,1 @@
+- [Production scope boundary](production-scope.md) — MVP scope is not permission to waive production Harness evidence.

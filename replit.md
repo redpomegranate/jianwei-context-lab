@@ -1,45 +1,24 @@
-# [Project name]
+# 见微 · Context Lab
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+中文、移动端优先的私人社会情境认知训练工具。区分事实与推断，先记录自己的解释，再审阅 AI 候选，提交可观察预测并回填结果与复盘。
 
 ## Run & Operate
+- `pnpm --filter @workspace/api-server run dev`
+- `pnpm --filter @workspace/context-lab run dev`
+- `pnpm run typecheck`
+- `pnpm --filter @workspace/api-server run test`
+- `pnpm --filter @workspace/api-spec run codegen`
 
-- `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
-- `pnpm run typecheck` — full typecheck across all packages
-- `pnpm run build` — typecheck + build all packages
-- `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
-- `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
-- Required env: `DATABASE_URL` — Postgres connection string
+## Architecture and boundaries
+- React/Vite frontend, shared Express API, OpenAPI-generated client and validation.
+- Supabase Auth and external Supabase PostgreSQL are explicitly user-selected. Do not substitute the scaffold's Replit database or run Drizzle push against it.
+- Dedicated Supabase project `jianwei-context-lab` in Singapore; public connection configuration lives in the API config. Never use the unrelated `cornertable-ledger` project.
+- Migrations in `supabase/migrations` are applied via Supabase MCP during development. Runtime uses user-scoped REST/RPC, not MCP. External schema is not migrated by Replit Publish.
+- AI uses the DeepSeek API through an OpenAI-compatible client (`DEEPSEEK_API_KEY`, default model `deepseek-flash`). Private material leaves the app only after explicit AI consent. Candidates never directly confirm user decisions.
+- Prediction snapshots are locked. Unknown outcomes are distinct from not-occurred outcomes. No intelligence ranking.
+- Four classical corpora in `data/classics` are archival downloads, not runtime retrieval. Read source manifests for licensing before reuse.
 
-## Stack
-
-- pnpm workspaces, Node.js 24, TypeScript 5.9
-- API: Express 5
-- DB: PostgreSQL + Drizzle ORM
-- Validation: Zod (`zod/v4`), `drizzle-zod`
-- API codegen: Orval (from OpenAPI spec)
-- Build: esbuild (CJS bundle)
-
-## Where things live
-
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
-
-## Architecture decisions
-
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
-
-## Product
-
-_Describe the high-level user-facing capabilities of this app once they exist._
-
-## User preferences
-
-_Populate as you build — explicit user instructions worth remembering across sessions._
-
-## Gotchas
-
-_Populate as you build — sharp edges, "always run X before Y" rules._
-
-## Pointers
-
-- See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details
+## Production readiness
+Current status: **NOT_READY** for public production. See `docs/backend-constraints.md` and `docs/launch-blockers.md`.
+MVP scope does not waive the production Harness gates in `.agents/skills/harness-engineering`.
+No deployment has been performed. User's intended later deployment target is Vercel.

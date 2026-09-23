@@ -1,0 +1,67 @@
+{
+  "title": "史記",
+  "slug": "shi-ji",
+  "status": "complete_as_source_edition",
+  "language": "zh",
+  "acquired_at": "2026-09-23",
+  "source": {
+    "repository": "https://github.com/kanripo/KR2a0001",
+    "exact_url": "https://codeload.github.com/kanripo/KR2a0001/zip/1c19dc6fa970b1c530fced9e8e3697d19163c26c",
+    "commit": "1c19dc6fa970b1c530fced9e8e3697d19163c26c",
+    "source_files": [
+      "KR2a0001_100.txt",
+      "KR2a0001_201.txt",
+      "KR2a0001_202.txt",
+      "KR2a0001_203.txt",
+      "KR2a0001_204.txt",
+      "KR2a0001_205.txt",
+      "KR2a0001_206.txt",
+      "KR2a0001_207.txt",
+      "KR2a0001_208.txt",
+      "KR2a0001_209.txt",
+      "KR2a0001_210.txt",
+      "KR2a0001_300.txt",
+      "KR2a0001_400.txt",
+      "KR2a0001_500.txt"
+    ],
+    "source_file_sha256": {
+      "KR2a0001_100.txt": "b2c951b0613186eca4026c0f91d1dc913046313e778a2af368fd32fd63545991",
+      "KR2a0001_201.txt": "aaf7c80a94aa00d01aff4c3c38f77140ec1eaf40f77e2a72964fd3da9896f9a6",
+      "KR2a0001_202.txt": "239e72d427fab140aec7de4bc1684b8e1bd125ee461027c53427f36d2ca36549",
+      "KR2a0001_203.txt": "bc850f0fc7df19835f638ff23e94b17d8106567bf55db1e0f1e891024b527059",
+      "KR2a0001_204.txt": "c1c2ffe40972918a1b61bc51a250fd8f4627409f0390b6e28e53246da986b56b",
+      "KR2a0001_205.txt": "884b7f5af9ff5e8b43e1ddc23bbb9d7b1096e9e7c236185fc41d6d84e6b317d4",
+      "KR2a0001_206.txt": "40e7e6ca1179bac6d2c6a641f9ea9491f2784e687b53084b518c2da2da8af762",
+      "KR2a0001_207.txt": "429442a535d30d8db9b029ecf993f223fac1afbe204e432951e6a7f43f9a588c",
+      "KR2a0001_208.txt": "3fe713a5b5e95a6289c1bfd6f46e9f72f412238e7858f09fa8e9c1239dbd2f9d",
+      "KR2a0001_209.txt": "bdcfa684241f1d414692538b7446ff8fab1ce90497cd37812aa2c419e37e0b95",
+      "KR2a0001_210.txt": "edfe23d432c21195a99db4d184a970facb519b69f46ccbafb639d67760333f43",
+      "KR2a0001_300.txt": "cfcc0b6033d188bd8cad949801d7356f40ab8052be095bd861671dd2421e3dc4",
+      "KR2a0001_400.txt": "2f06615344b42f167c4f5704c8431f52cb8bb04708839686b04c1284c73367bc",
+      "KR2a0001_500.txt": "02ebd6e50938cf3ab8c4df6bfa8d880a6c434f51518d38eba2183829dcebb07e"
+    },
+    "archive_sha256": "667ffbec15d52d556a03547d880211249fb74da04d3382997fc7f76e56364095",
+    "original_format": "UTF-8 Mandoku/org-like annotated plain text"
+  },
+  "license": {
+    "designation": "CC BY-SA 4.0 for Kanseki Repository-created content; underlying ancient text public domain",
+    "evidence": [
+      "https://api.github.com/orgs/kanripo",
+      "https://www.kanripo.org/",
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "uncertainty": "The individual repository has no LICENSE file. The GitHub organization description explicitly says the collection is CC BY-SA 4.0, and the Kanseki Repository site applies CC BY-SA 4.0 to content it created. Source lines cite modern editions for collation; no modern translation is included."
+  },
+  "completeness": {
+    "expected_chapters": 130,
+    "actual_chapters": 130,
+    "verification": "Counted 130 numbered work headings across 本紀 (12), 表 (10), 書 (8), 世家 (30), and 列傳 (70), matching the received structure. Structural completeness does not certify every character against a critical edition."
+  },
+  "conversion": "Sorted the 15 source files by filename; removed Mandoku file metadata, page-break tags, paragraph markers, and modern “# src:” collation-note lines; retained Chinese source text; converted section/work headings to Markdown; normalized LF and trailing whitespace.",
+  "files": {
+    "text.md": {
+      "sha256": "1f4febffb9d33049616c1c67088c993f03fa22bc4aa9e9a509363b788890e0d7",
+      "bytes": 2418755
+    }
+  }
+}

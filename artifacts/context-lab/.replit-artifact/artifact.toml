@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "见微 · 社会情境认知训练器"
+description = "帮助用户记录事实、提出替代假设、提交可验证预测，并通过结果回填与复盘校准判断的私人训练工具。"
+version = "1.0.0"
+id = "artifacts/context-lab"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20900
+
+[services.development]
+run = "pnpm --filter @workspace/context-lab run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/context-lab", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/context-lab/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20900"
+BASE_PATH = "/"

@@ -1,0 +1,35 @@
+{
+  "title": "紅樓夢",
+  "slug": "hong-lou-meng",
+  "status": "complete_as_source_edition",
+  "language": "zh",
+  "acquired_at": "2026-09-23",
+  "source": {
+    "repository": "https://github.com/GITenberg/---_24264",
+    "exact_url": "https://raw.githubusercontent.com/GITenberg/---_24264/f86ffb9dd67165e3e17c29ab3ea3d29fd5d00d34/24264-0.txt",
+    "commit": "f86ffb9dd67165e3e17c29ab3ea3d29fd5d00d34",
+    "source_file": "24264-0.txt",
+    "source_sha256": "20c795971786fd8eb2a00d35a1194b6dd3074b2afb4f4cd5a82ba3e10fe5dfaa",
+    "original_format": "UTF-8 plain text (Project Gutenberg ebook 24264)"
+  },
+  "license": {
+    "designation": "Public domain in the United States; Project Gutenberg License/trademark terms apply to the source ebook",
+    "evidence": [
+      "https://github.com/GITenberg/---_24264/blob/f86ffb9dd67165e3e17c29ab3ea3d29fd5d00d34/README.rst",
+      "https://github.com/GITenberg/---_24264/blob/f86ffb9dd67165e3e17c29ab3ea3d29fd5d00d34/LICENSE"
+    ],
+    "uncertainty": "Project Gutenberg states public-domain status for the United States and warns that copyright law varies by country. Gutenberg headers, footer, license text, and trademark references were removed from text.md; source provenance remains here."
+  },
+  "completeness": {
+    "expected_chapters": 120,
+    "actual_chapters": 120,
+    "verification": "All numbered headings 第一回 through 第一二零回 were found in sequence. This verifies structural completeness against the conventional 120-chapter received edition, not textual accuracy against a critical edition."
+  },
+  "conversion": "Removed Project Gutenberg header/footer; normalized LF and trailing whitespace; promoted each verified chapter heading to Markdown H2; added an H1. No translation or modernization.",
+  "files": {
+    "text.md": {
+      "sha256": "2b9227b8d05aa51d6434e2f13bb9e84584e316eb78ed8f5bdc58c531f09491ff",
+      "bytes": 2615566
+    }
+  }
+}

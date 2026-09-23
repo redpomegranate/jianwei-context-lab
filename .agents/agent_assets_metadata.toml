@@ -30,3 +30,17 @@ storage_uri = "gcs://replit-rams-assets-sisko/rams/assets/conversation:66371907-
 storage_version_token = "1790126969173595"
 content_type = "application/octet-stream"
 source_uri = "file://attached_assets/harness-engineering-v0.2.0.zip"
+
+[[outputs]]
+id = "U3a04FU-Osyp_qL1-nCDr"
+uri = "file://exports/chinese-classics-markdown.zip"
+type = "unspecified"
+title = "四部古籍 Markdown 语料包"
+description = "资治通鉴、史记、孙子兵法、红楼梦，附固定版本来源、许可说明、SHA-256 与章节完整性记录。"
+logical_id = "cc82a71a-7569-4041-9ccc-753eff4d2410"
+content_hash = "sha256:9ef46996c5764897d00bf61342721b4c1e838db6a6f8416bab48a8fb9a77f8b7"
+size = 9427848
+mtime_ms = 1790130312254
+storage_uri = "gcs://replit-rams-assets-sisko/rams/assets/repl:8b5f9992-1590-4ac7-ba9e-4eaf55fc1f08/cc82a71a-7569-4041-9ccc-753eff4d2410/f565b33b-5bbf-4d7e-812a-feed1cba4d04"
+storage_version_token = "1790130320206590"
+content_type = "application/octet-stream"
